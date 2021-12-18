@@ -1,6 +1,24 @@
 .logo {
+  display: block;
   font-family: Raleway;
   @include font(26px, 700, 1.19, 0.03em);
   color: var(--accent-color);
-  display: block;
+}
+
+.logo__header {
+  margin-right: 90px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo__footer {
+  margin-bottom: 20px;
+}
+
+.logo__header--black-part {
+  color: var(--header-logo-second-part-color);
+}
+
+.logo__footer--white-part {
+  color: var(--footer-logo-second-part-color);
 }

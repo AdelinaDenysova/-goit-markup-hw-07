@@ -4,24 +4,12 @@
   background-color: var(--section-background-color);
 }
 
-// Logo
-
-.footer__logo {
-  margin-bottom: 20px;
-}
-
-.footer__logo--white-part {
-  color: var(--footer-logo-second-part-color);
-}
-
-/* Address */
-
 .footer__wrap {
   display: flex;
   align-items: baseline;
 }
 
-.footer-box {
+.footer__meta {
   margin-right: 70px;
 }
 
@@ -29,18 +17,18 @@
   font-style: normal;
 }
 
-.footer__address-item {
+.footer__map {
+  display: block;
+  margin-bottom: 9px;
   @include font(14px, 400, 1.71, 0.03em);
   color: var(--footer-text-color);
-  display: block;
-  margin-bottom: 9px;
 }
 
-.footer__mail-item {
-  @include font(14px, 400, 1.71, 0.03em);
-  color: var(--footer-second-text-color);
+.footer__mail {
   display: block;
   margin-bottom: 9px;
+  @include font(14px, 400, 1.71, 0.03em);
+  color: var(--footer-second-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -48,10 +36,10 @@
   }
 }
 
-.footer__tel-item {
+.footer__tel {
+  display: block;
   @include font(14px, 400, 1.71, 0.03em);
   color: var(--footer-second-text-color);
-  display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -59,99 +47,37 @@
   }
 }
 
-.social-links-cotainer {
+.footer__title {
+  margin-bottom: 20px;
+  @include font(14px, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--footer-text-color);
+}
+
+.footer__social {
   margin-right: 93px;
 }
 
-.social-links-title {
-  @include font(14px, 700, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: var(--footer-text-color);
-  margin-bottom: 20px;
-}
-
-.social-links-icons-list {
+.subscripe__form {
   display: flex;
 }
 
-.social-links-icon-item {
-  width: 44px;
-  height: 44px;
-  & + .social-links-icon-item {
-    margin-left: 10px;
-  }
-}
-
-.social-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  @extend %align-items;
-  background-color: var(--footer-icons-background-color);
-  fill: var(--icon-hover-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-}
-
-.subscribe-container-title {
-  @include font(14px, 700, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: var(--footer-text-color);
-  margin-bottom: 20px;
-}
-
-.subscripe-form {
+.subscribe__email-input {
   display: flex;
-}
-
-.footer-email-input {
-  display: flex;
-  color: var(--footer-text-color);
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   width: 358px;
   height: 50px;
   margin-right: 12px;
-  outline: none;
   padding-left: 16px;
+  color: var(--footer-text-color);
+  background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
     @extend %align-items;
-    letter-spacing: 0.03em;
+    @include font(16px, 400, 1.25, 0.03em);
     color: var(--footer-placeholder-text);
   }
-}
-
-.subscribe-btn {
-  @extend %align-items;
-  font-family: inherit;
-  @include font(16px, 700, 1.87, 0.06em);
-  text-align: center;
-  color: var(--main-btn-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  min-width: 200px;
-  height: 50px;
-  align-items: center;
-  padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--btn-hover-color);
-  }
-}
-
-.send-icon {
-  fill: #ffffff;
-  margin-left: 10px;
 }
