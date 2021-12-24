@@ -1,8 +1,8 @@
 .logo {
   display: block;
-  font-family: Raleway;
+  font-family: $logo-font;
   @include font(26px, 700, 1.19, 0.03em);
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo__header {
@@ -16,9 +16,9 @@
 }
 
 .logo__header--black-part {
-  color: var(--header-logo-second-part-color);
+  color: $header-logo-second-part-color;
 }
 
 .logo__footer--white-part {
-  color: var(--footer-logo-second-part-color);
+  color: $footer-logo-second-part-color;
 }

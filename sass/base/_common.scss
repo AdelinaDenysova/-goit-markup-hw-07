@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-text-color);
+  font-family: $main-font;
+  color: $main-text-color;
 }
 
 .list {

@@ -60,10 +60,10 @@
 
 .portfolio__name {
   @include font(18px, 700, 2, 0.06em);
-  color: var(--third-title-color);
+  color: $third-title-color;
 }
 
 .portfolio__description {
   @include font(16px, 400, 1.87, 0.03em);
-  color: var(--main-text-color);
+  color: $main-text-color;
 }

@@ -1,12 +1,12 @@
 .team {
-  background-color: var(--main-content-background-color);
+  background-color: $main-content-background-color;
 }
 
 .team__title {
   margin-bottom: 50px;
   @include font(36px, 700, 1.17, 0.03em);
   text-align: center;
-  color: var(--second-title-color);
+  color: $second-title-color;
 }
 
 .team__list {
@@ -34,12 +34,12 @@
   margin-bottom: 10px;
   @include font(16px, 500, 1.19, 0.03em);
   text-align: center;
-  color: var(--third-title-color);
+  color: $third-title-color;
 }
 
 .team__occupation {
   margin-bottom: 16px;
   @include font(16px, 400, 1.19, 0.03em);
   text-align: center;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
